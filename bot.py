@@ -17,11 +17,11 @@ def change_bd():
     raz = today_zero-dr_vk
     if raz == timedelta(days=1):
         new_bd_vk = today_zero + timedelta(days=1)  # сет др
-        str_new_bd = new_bd_vk.strftime('%d.%m') + '.2020'  # др в стринг
+        str_new_bd = new_bd_vk.strftime('%d.%m') + '.1998'  # др в стринг
         vk.account.saveProfileInfo(bdate=str_new_bd)  # ред др вк
     elif raz == timedelta(days=2):
         new_bd_vk = today_zero  # сет др
-        str_new_bd = new_bd_vk.strftime('%d.%m') + '.2020'  # др в стринг
+        str_new_bd = new_bd_vk.strftime('%d.%m') + '.1998'  # др в стринг
         vk.account.saveProfileInfo(bdate=str_new_bd)  # ред др вк
     elif raz == timedelta(days=0):
         print('BirthDay today')
